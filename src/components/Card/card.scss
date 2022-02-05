@@ -1,0 +1,98 @@
+.card {
+  width: 1100px;
+  height: 163px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 40px 30px 30px 30px;
+  font-family: "Spartan", sans-serif;
+
+  border-left: 5px solid rgb(91, 164, 164);
+  background-color: rgb(255, 255, 255);
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+  &_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  &_info {
+    width: 264px;
+    height: 93px;
+  }
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(123, 142, 142);
+  }
+  &_first {
+    display: flex;
+    position: relative;
+    width: 72px;
+    height: 18px;
+    align-items: center;
+  }
+  &_first::after {
+    content: "";
+    width: 5px;
+    position: absolute;
+    border-radius: 50%;
+    height: 5px;
+    background: #7b8e8e;
+    margin-left: 50px;
+  }
+  &_second {
+    display: flex;
+    position: relative;
+    width: 72px;
+    height: 18px;
+    align-items: center;
+  }
+  &_second::after {
+    content: "";
+    width: 5px;
+    position: absolute;
+    border-radius: 50%;
+    height: 5px;
+    background: #7b8e8e;
+    margin-left: 70px;
+  }
+  &_filter {
+    display: flex;
+    gap: 16px;
+    width: 408px;
+    height: 33px;
+  }
+  &_tags {
+    color: rgb(91, 164, 164);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px;
+    cursor: pointer;
+    border-style: none;
+    border-color: rgb(91, 164, 164);
+    border-radius: 5px;
+    transition: 0.4s all eases;
+    align-items: flex-start;
+  }
+
+  &_title {
+    width: 270px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+  &_items {
+    margin-bottom: 13px;
+    color: rgb(91, 164, 164);
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 15px;
+  }
+}
