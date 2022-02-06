@@ -49,3 +49,26 @@
     border-style: none;
   }
 }
+@media (max-width: 1159px) {
+  .SearchBar {
+    width: 800px;
+  }
+}
+
+@media (max-width: 885px) {
+  .SearchBar {
+    width: 600px;
+  }
+}
+@media (max-width: 681px) {
+  .SearchBar {
+    width: 450px;
+    &_keywords {
+      font-size: 12px;
+    }
+    &_clear {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

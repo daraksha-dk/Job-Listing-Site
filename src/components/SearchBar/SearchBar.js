@@ -16,7 +16,7 @@ const SearchBar = ({ keywords, onClose, onClearItem }) => {
                 className="SearchBar_clear"
                 onClick={() => onClearItem(keyword)}
               >
-                <XIcon />
+                <XIcon className="SearchBar_icon" />
               </button>
             </>
           );

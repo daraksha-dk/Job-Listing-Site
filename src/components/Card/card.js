@@ -6,22 +6,24 @@ const card = ({ data, setKeywords }) => {
   return (
     <div className="card">
       <div className="card_container">
-        <div className="card_img">
-          <img src={data.logo} alt="logo" />
-        </div>
-        <div className="card_info">
-          <div className="card_items">
-            <span>{data.company}</span>
+        <div className="card_container_left">
+          <div className="card_img">
+            <img src={data.logo} alt="logo" />
           </div>
-          <div className="card_title">{data.position}</div>
-          <div className="card_list">
-            <span className="card_first">{data.postedAt}</span>
-            <span className="card_second">
-              <li>{data.contract}</li>
-            </span>
-            <span>
-              <li>{data.location}</li>
-            </span>
+          <div className="card_info">
+            <div className="card_items">
+              <span>{data.company}</span>
+            </div>
+            <div className="card_title">{data.position}</div>
+            <div className="card_list">
+              <span className="card_first">{data.postedAt}</span>
+              <span className="card_second">
+                <li>{data.contract}</li>
+              </span>
+              <span>
+                <li>{data.location}</li>
+              </span>
+            </div>
           </div>
         </div>
         <div className="card_filter">
