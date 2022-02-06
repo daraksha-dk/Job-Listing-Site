@@ -1,13 +1,13 @@
 .card {
   width: 1100px;
-  height: 163px;
+  height: 120px;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 40px 30px 30px 30px;
   font-family: "Spartan", sans-serif;
-
   border-left: 5px solid rgb(91, 164, 164);
   background-color: rgb(255, 255, 255);
+
   &_container {
     display: flex;
     align-items: center;
@@ -30,55 +30,30 @@
     font-weight: 500;
     color: rgb(123, 142, 142);
   }
-  &_first {
-    display: flex;
-    position: relative;
-    width: 72px;
-    height: 18px;
-    align-items: center;
-  }
-  &_first::after {
-    content: "";
-    width: 5px;
-    position: absolute;
-    border-radius: 50%;
-    height: 5px;
-    background: #7b8e8e;
-    margin-left: 50px;
-  }
-  &_second {
-    display: flex;
-    position: relative;
-    width: 72px;
-    height: 18px;
-    align-items: center;
-  }
-  &_second::after {
-    content: "";
-    width: 5px;
-    position: absolute;
-    border-radius: 50%;
-    height: 5px;
-    background: #7b8e8e;
-    margin-left: 70px;
-  }
+
   &_filter {
     display: flex;
-    gap: 16px;
+    align-items: center;
     width: 408px;
     height: 33px;
+    gap: 16px;
   }
   &_tags {
-    color: rgb(91, 164, 164);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 9px;
-    cursor: pointer;
-    border-style: none;
-    border-color: rgb(91, 164, 164);
-    border-radius: 5px;
-    transition: 0.4s all eases;
     align-items: flex-start;
+    border-color: rgb(91, 164, 164);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 9px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    color: rgb(91, 164, 164);
+    transition: 0.4s all eases;
+  }
+  &_tags:hover {
+    background: rgb(91, 164, 164);
+    color: white;
   }
 
   &_title {
@@ -87,6 +62,9 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 13px;
+  }
+  &_title:hover {
+    color: rgb(91, 164, 164);
   }
   &_items {
     margin-bottom: 13px;
