@@ -1,0 +1,51 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border-left: 5px solid rgb(91, 164, 164);
+  padding: 20px;
+  font-family: "Spartan", sans-serif;
+  margin-bottom: 20px;
+  margin-left: 125px;
+  &_keywords {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 5px;
+    box-shadow: 0 0 2.5px rgb(0 0 0 / 15%);
+    color: #5ba4a4;
+    font-weight: 700;
+    margin: 0 20px 1rem 0;
+    padding-left: 8px;
+    font-family: "Spartan", sans-serif;
+  }
+  &_clear {
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: none;
+    margin-left: 5px;
+    width: 40px;
+    background-color: rgb(91, 164, 164);
+  }
+
+  &_close {
+    color: #7b8e8e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    text-transform: capitalize;
+    transform: translateY(-15%);
+    margin-left: 15px;
+    border-style: none;
+  }
+}

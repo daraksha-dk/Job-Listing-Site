@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.scss";
 
-const card = ({ data }) => {
+const card = ({ data, setKeywords }) => {
   const tablets = [data.role, data.level, ...data.languages];
   return (
     <div className="card">
@@ -27,7 +27,11 @@ const card = ({ data }) => {
         <div className="card_filter">
           {tablets.map((tablet, i) => {
             return (
-              <button className="card_tags" key={i}>
+              <button
+                onClick={() => setKeywords(tablet)}
+                className="card_tags"
+                key={i}
+              >
                 {tablet}
               </button>
             );
