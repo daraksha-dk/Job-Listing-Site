@@ -1,32 +1,29 @@
 .SearchBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include fc(1, 1);
   width: 1100px;
   height: 40px;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  border-left: 5px solid rgb(91, 164, 164);
+  background-color: $bg-color;
+  border-left: 5px solid $primary-color;
   padding: 20px;
-  font-family: "Spartan", sans-serif;
+  font-family: $primary-font;
   margin-bottom: 20px;
   margin-left: 125px;
   &_keywords {
-    display: flex;
-    align-items: center;
+    @include fc(1, 0);
     gap: 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-left: 5px;
     box-shadow: 0 0 2.5px rgb(0 0 0 / 15%);
-    color: #5ba4a4;
+    color: $primary-color;
     font-weight: 700;
     margin: 0 20px 1rem 0;
     padding-left: 8px;
-    font-family: "Spartan", sans-serif;
+    font-family: $primary-font;
   }
   &_clear {
-    color: white;
+    color: $bg-color;
     cursor: pointer;
     height: 40px;
     border-top-right-radius: 5px;
@@ -34,14 +31,13 @@
     border-style: none;
     margin-left: 5px;
     width: 40px;
-    background-color: rgb(91, 164, 164);
+    background-color: $primary-color;
   }
 
   &_close {
     color: #7b8e8e;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
+    @include df(700, 14px);
     outline: none;
     text-transform: capitalize;
     transform: translateY(-15%);

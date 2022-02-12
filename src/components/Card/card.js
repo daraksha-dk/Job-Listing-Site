@@ -1,5 +1,4 @@
 import React from "react";
-import "./card.scss";
 
 const card = ({ data, setKeywords }) => {
   const tablets = [data.role, data.level, ...data.languages];

@@ -1,5 +1,4 @@
 import React from "react";
-import "./SearchBar.scss";
 import { ReactComponent as XIcon } from "../../assets/images/x.svg";
 
 const SearchBar = ({ keywords, onClose, onClearItem }) => {

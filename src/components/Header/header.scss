@@ -1,10 +1,9 @@
 .header {
-  background-color: red;
   width: 1351px;
   height: 156px;
   background-size: cover;
   margin-bottom: 56px;
   background-image: url(https://josefigueroa-job-listings-with-filtering.netlify.app/images/bg-header-desktop.svg);
-  background-color: rgb(91, 164, 164);
+  background-color: $primary-color;
   padding: 0 24px;
 }

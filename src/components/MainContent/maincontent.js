@@ -1,5 +1,4 @@
 import React from "react";
-import "./maincontent.scss";
 import Card from "../Card/card";
 import data from "../../data";
 
