@@ -1,7 +1,5 @@
 .card {
-  width: 1100px;
   height: 100px;
-  border-radius: 5px;
   margin-bottom: 20px;
   padding: 40px 30px 30px 30px;
   font-family: $primary-font;
@@ -21,12 +19,14 @@
       @include fc(1, 0);
       justify-content: space-around;
       flex: 1;
+      margin-right: 20px;
     }
   }
   &_img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    margin-right: 15px;
   }
   &_info {
     width: 264px;
@@ -43,6 +43,7 @@
     width: 408px;
     height: 33px;
     gap: 16px;
+    flex-wrap: wrap;
     flex: 1;
   }
   &_tags {
@@ -78,39 +79,34 @@
     margin-right: 15px;
   }
 }
-@media (max-width: 1159px) {
-  .card {
-    width: 800px;
-  }
-}
 
-@media (max-width: 885px) {
+// media queries
+
+@media (max-width: 900px) {
   .card {
-    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     @include fc(1, 1);
+
     &_container {
-      display: flex;
       flex-direction: column;
       row-gap: 15px;
+
+      &_left {
+        width: 100%;
+      }
     }
-    &_img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-bottom: 40px;
+    &_img > img {
+      width: 70px;
+      height: 70px;
     }
+
     &_info {
       font-size: 10px;
-      margin-left: 120px;
     }
 
     &_tags {
       font-size: 12px;
     }
-  }
-}
-@media (max-width: 681px) {
-  .card {
-    width: 400px;
   }
 }
